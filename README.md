@@ -12,8 +12,18 @@
 ### 安装/更新方式（h2 和 ws 版本已合并）
 Vmess+websocket+TLS+Nginx+Website
 ```
+yum update -y && yum install curl -y
+```
+```
 bash <(curl -L -s https://raw.githubusercontent.com/201619825/V2Ray_ws-tls_bash_onekey/master/install.sh) | tee v2ray_ins.log
 ```
+```
+systemctl start v2ray
+```
+```
+systemctl start nginx
+```
+最后安装下bbr或bbrplus
 ```
 wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/201619825/V2Ray_ws-tls_bash_onekey/master/install.sh" && chmod +x install.sh && bash install.sh
 ```
